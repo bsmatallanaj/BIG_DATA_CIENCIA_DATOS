@@ -1,7 +1,7 @@
 #####################################################################################
 # AUTOR: BRAYAN MATALLANA JOYA                                                      #
 # FECHA: 11/09/2024                                                                 #
-# DESCRIPCION: Algoritmo de optimización simple usando el dataset Boston Housing    #
+# DESCRIPCION: Algoritmo de optimizaciÃ³n simple usando el dataset Boston Housing   #
 # ASIGNATURA: BIG DATA, CIENCIA DE DATOS- TS7A                                      #
 #####################################################################################
 
@@ -12,13 +12,13 @@ import pandas as pd
 from sklearn.datasets import fetch_openml
 import matplotlib.pyplot as plt
 
-# Cargar del dataset
-boston = fetch_openml(name='boston', version=1, as_frame=True)
+# Cargar datos del dataset
+boston_datos = fetch_openml(name='boston', version=1, as_frame=True)
 
-# aracteristicas X, Y
-X = boston.data 
+# Caracteristicas X, Y
+X = boston_datos.data 
     # ARRAY
-y = boston.target.values  
+y = boston_datos.target.values  
 
 X_rm = X['RM'].values.reshape(-1, 1)  
 
