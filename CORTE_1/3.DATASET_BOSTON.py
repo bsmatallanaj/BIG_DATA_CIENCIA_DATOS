@@ -41,7 +41,7 @@ for i in range(epochs):
     m = m - L * D_m  # Actualizacion de m
     b = b - L * D_b  # Actualizacion de b
 
-# Prediccion final con los parometros ajustados
+# Prediccion final con los parametros ajustados
 y_pred = m * X_rm + b
 
 # Visualizacion de la regresion lineal
