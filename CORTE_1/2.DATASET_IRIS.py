@@ -12,24 +12,24 @@ import numpy as np
 from ucimlrepo import fetch_ucirepo
 
 # DATOS IRIS
-iris = fetch_ucirepo(id=53)
+iris_datos = fetch_ucirepo(id=53)
 
 # Declaracion de DataFrames de pandas
-X = iris.data.features
-y = iris.data.targets
+X = iris_datos.data.features
+y = iris_datos.data.targets
 
 #Cabeceras
-print("Características (X):")
+print("Caracteristicas en (X):")
 print(X.head())
 
-print("\nObjetivo (y):")
+print("\nObjetivo en (y):")
 print(y.head())
 
-# Calculos de estadisticas  descriptivas
+# Calculos de las estadisticas  descriptivas
 
 # Media
-print("\nEstadísticas Descriptivas de las Características:")
-print("Media:")
+print("\nEstadisticas Descriptivas de las Caracteristicas:")
+print("\nMedia:")
 print(X.mean())  
 
 # Mediana
@@ -37,14 +37,14 @@ print("\nMediana:")
 print(X.median())  
 
 # Desviacion estandar
-print("\nDesviación Estándar:")
+print("\nDesviacion Estandar:")
 print(X.std())  
 
 # Metadatos
 print("\nMetadatos:")
-print(iris.metadata)
+print(iris_datos.metadata)
 
 # Variables informacion
-print("\nInformación de variables:")
-print(iris.variables)
+print("\nInformacion de las variables:")
+print(iris_datos.variables)
 
